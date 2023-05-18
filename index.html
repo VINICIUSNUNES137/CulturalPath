@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/recreacao/recreacao.css">
     <script src="https://kit.fontawesome.com/324b71f187.js" crossorigin="anonymous"></script>
     <script src="./js/menuHeader.js" defer></script>
     <script src="./js/app.js" defer type="module"></script>
@@ -31,8 +32,9 @@
                 <li><a href="/parceiro" onclick="route()">Seja um Parceiro</a></li>
                 <li><a href="/calendario" onclick="route()">Calendário</a></li>
                 <li><a href="/voluntario" onclick="route()">Voluntários</a></li>
+                <li><a href="/recreacao" onclick="route()">Recreação</a></li>
             </ul>
-            <div class="button_doe">
+            <div class="button_doe" id="button_doe">
                 DOE
             </div>
             <div id="menu-icon" class="menu-icon">
@@ -41,7 +43,36 @@
         </div>
     </header>
     <main id="root">
-        <container class="page__parceiros" id="container">PÁGINA DE PARCEIRO</container>
+        <container class="page__recreacao" id="container">
+            <div class="recreacao__title">RECREAÇÃO</div>
+            <div class="recreacao__videos">
+                <div class="video__title">ASSISTA NOSSOS CONTEÚDO INFANTIL</div>
+                <div class="video__container">
+                    <div class="video">
+                        <img src="https://i.ytimg.com/vi/d_7ACUhbTvE/maxresdefault.jpg" alt="">
+                    </div>
+                    <div class="video"> 
+                        <img src="https://i.ytimg.com/vi/uDz8-zG1CZk/maxresdefault.jpg" alt="">
+                    </div>
+                    <div class="video"> 
+                        <img src="https://i.ytimg.com/vi/d_7ACUhbTvE/maxresdefault.jpg" alt="">
+                    </div>
+                    <div class="video-content"> 
+                        <img src="https://i.ytimg.com/vi/uDz8-zG1CZk/maxresdefault.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+        </container>
+
+
+
+
+
+
+
+
     </main>
 
     <footer>
@@ -66,7 +97,7 @@
                 <div class="links-button">
                     <a href="#">Página inicial</a>
                     <a href="#">Seja nosso Parceiro</a>
-                    <button class="button-footer">
+                    <button class="button-footer" id="button-footer">
                         Doe Agora
                     </button>
 
