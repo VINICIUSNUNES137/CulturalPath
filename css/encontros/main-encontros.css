@@ -1,0 +1,164 @@
+.container-main-encontros{
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    width: 100%;
+    height: 50vw;
+}
+
+.container-title-card{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title-encontros{
+    font-size: 2.5rem;
+}
+
+.card-encontros{
+    display: grid;
+    grid-template-areas: "text image";
+    grid-template-columns: 50% 50%;
+    width:85%;
+    border-radius: 32px;
+    background-color: #E4E4E4;
+}
+
+
+.text-card-encontro{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 32px 0 0 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.image-card{
+    grid-area: image;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.image-card-encontro{
+    border-radius: 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+.teste{
+    display: flex;
+    gap: 20PX;
+    justify-content: center;
+    width: 100%;
+}
+
+.tema{
+    font-size: 3rem;
+}
+p{
+    font-size: 1.5rem;
+}
+
+
+.cta_calendario{
+    height: 15vw;
+}
+
+
+.container-cta-calendario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 100px;
+    height: 100%;
+    gap: 10px;
+    background-image: url(../../img/headway-F2KRf_QfCqw-unsplash\ 1.png);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+@media(max-width:768px){
+
+    .container-main-encontros{
+        height: 200vw;
+    }
+    .card-encontros{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+        border-radius:  32px 32px 32px 32px ;
+        
+    }
+    .title-encontros{
+        font-size: 1.1rem;
+    }
+
+    p{
+       font-size: 1rem;
+    }
+
+    .texts{
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        font-size: 1.5rem;
+    }
+
+
+    .image-card{
+        width: 100%;
+        height: 100%;
+        border-radius: 32px 32px 0px 0px ;
+    }
+    .image-card-encontro{
+        width: 100%;
+
+    }
+    .container-title-card{
+     display: flex;
+     flex-direction: column;
+     
+    }
+    .text-card-encontro{
+        padding: 20px;
+        border-radius: 0 0 32px 32px;
+    }
+
+    .title-calendario{
+        font-size: 1rem;
+    }
+    .cta_calendario{
+       height: 50vw;
+    }
+    .container-cta-calendario{
+        padding-left: 20px;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+    .text_cta{
+        font-size: 0.7rem;
+    }
+
+   
+
+
+}
+
+
