@@ -1,42 +1,136 @@
-/* <container class="page__recreacao" id="container">
-<div class="recreacao__title">RECREAÇÃO</div>
-<div class="recreacao__videos">
-    <div class="video__title">ASSISTA NOSSOS CONTEÚDO INFANTIL</div>
-    <div class="video__container">
-        <div class="video">
-            <img src="https://i.ytimg.com/vi/d_7ACUhbTvE/maxresdefault.jpg" alt="">
-        </div>
-        <div class="video"> 
-            <img src="https://i.ytimg.com/vi/uDz8-zG1CZk/maxresdefault.jpg" alt="">
-        </div>
-        <div class="video"> 
-            <img src="https://i.ytimg.com/vi/d_7ACUhbTvE/maxresdefault.jpg" alt="">
-        </div>
-        <div class="video"> 
-            <img src="https://i.ytimg.com/vi/uDz8-zG1CZk/maxresdefault.jpg" alt="">
-        </div>
-    </div>
-</div> */
-
-.page__recreacao{
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-    
+.page__recreacao {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  gap: 32px;
 }
 
-.recreacao__title{
+.recreacao__videos {
+  padding-left: 24px;
+  width: 100%;
+}
+
+.section__title {
+  font-size: 2rem;
+  color: #009d78;
+  font-weight: 800;
+}
+
+.recreacao__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  background-color: #009d78;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.video__container {
+  width: 100%;
+  place-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 16px;
+  overflow-y: scroll;
+}
+
+.video {
+  width: 400px;
+  border-radius: 16px;
+}
+
+.recreacao__mapa{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding: 0 32px 0 32px ;
+
+}
+
+.mapa-content{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100px;
-    background-color: #009d78;
-    color: #fff;
-    font-size: 2.5rem;
-    font-weight: 800;
+    height: fit-content;
+    background-color: #F2F2F2;
+    border-radius: 32px;
 }
 
-.video{
-    width: 300px;
+path{
+    fill: #009d78   ;
+    stroke: #fff;
+    stroke-width: 2px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+path:hover{
+    fill: #05624C;
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding: 0 32px 0 32px ;
+}
+
+.game__image{
+    width: max-content;
+}
+
+.game__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 400px;
+    height: fit-content;
+    background-color: #F2F2F2;
+    border-radius: 32px;
+}
+
+.game__text{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.game__title{
+    font-size: 5rem;
+}
+
+.game__description{
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 70%  ;
+}
+.game__description::after{
+    content: 'Aristóteles, 384 a.C.';
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.button__jogar{
+    background-color: #009D78;
+    width: 200px;
+    height: 50px;
+    border-radius: 32px;
+    border: none;
+    color: #fff;
+    font-weight: 800;
+
+}
+
+@media(max-width:768px){
+
+    .game__image{
+        width: 200px;
+    }
 }
