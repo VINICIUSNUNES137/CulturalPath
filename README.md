@@ -1,4 +1,2 @@
 # CulturalPath
-# CulturalPath
-# CulturalPath
-# CulturalPath
+
